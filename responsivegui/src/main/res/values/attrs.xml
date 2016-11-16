@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PolarCoordCenterX" format="float"/>
+    <attr name="PolarCoordCenterY" format="float"/>
+    <attr name="PolarCoordRad" format="float"/>
+    <attr name="PolarCoordTheta" format="float"/>
+    <attr name="UsePolar" format="boolean"/>
+
+    <declare-styleable name="ResponsiveRelativeLayout">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveCardView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveFrameLayout">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveImageView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveProgressBar">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveInkPageIndicator">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+
+    <declare-styleable name="ResponsiveRecyclerView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveScrollView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveTextView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+
+    <declare-styleable name="ResponsiveEditText">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveViewPager">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+
+    <declare-styleable name="ResponsiveRoundedImageView">
+        <attr name="PolarCoordCenterX"/>
+        <attr name="PolarCoordCenterY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+</resources>
