@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#9F000000</color>
+
+    <color name="colorA1">#1ABC9C</color>
+    <color name="colorA2">#16A085</color>
+    <color name="colorA3">#2ECC71</color>
+    <color name="colorA4">#27AE60</color>
+    <color name="colorA5">#3498DB</color>
+    <color name="colorA6">#2980B9</color>
+    <color name="colorA7">#34495E</color>
+    <color name="colorA8">#2C3E50</color>
+    <color name="colorA9">#EA4C88</color>
+    <color name="colorA10">#CA2C68</color>
+    <color name="colorA11">#9B59B6</color>
+    <color name="colorA12">#8E44AD</color>
+    <color name="colorA13">#F1C40F</color>
+    <color name="colorA14">#F39C12</color>
+    <color name="colorA15">#E74C3C</color>
+    <color name="colorA16">#C0392B</color>
+    <color name="colorA17">#ECF0F1</color>
+    <color name="colorA18">#BDC3C7</color>
+    <color name="colorA19">#95A5A6</color>
+    <color name="colorA20">#7F8C8D</color>
+
 </resources>

@@ -24,8 +24,8 @@ public class PixelDimensions {
     private float wRatio;
     private float hRatio;
 
-    private float polarCenterX=0;
-    private float polarCenterY=0;
+    private float polarOriginX=0;
+    private float polarOriginY=0;
     private float polarRad=0;
     private float polarTheta=0;
 
@@ -43,15 +43,15 @@ public class PixelDimensions {
         this.dpH = dpHeight;
         setFromDp(parent);
     }
-    public PixelDimensions(float dpX, float dpY, float dpEX, float dpEY, float dpWidth, float dpHeight, View parent, float polarCenterX, float polarCenterY, float polarRad, float polarTheta, boolean usePolar) {
+    public PixelDimensions(float dpX, float dpY, float dpEX, float dpEY, float dpWidth, float dpHeight, View parent, float polarOriginX, float polarOriginY, float polarRad, float polarTheta, boolean usePolar) {
         this.dpX = dpX;
         this.dpY = dpY;
         this.dpEX = dpEX;
         this.dpEY = dpEY;
         this.dpW = dpWidth;
         this.dpH = dpHeight;
-        this.polarCenterX = polarCenterX;
-        this.polarCenterY = polarCenterY;
+        this.polarOriginX = polarOriginX;
+        this.polarOriginY = polarOriginY;
         this.polarRad = polarRad;
         this.polarTheta = polarTheta;
         this.usePolar = usePolar;
@@ -129,8 +129,8 @@ public class PixelDimensions {
             hRatio = Math.min (parentWRatio, parentHRatio);
 
         if (usePolar) {
-            this.dpX = polarCenterX  + (float) Math.cos(polarTheta * Math.PI / 180.0f) * polarRad / parentWRatio * wRatio - dpW / 2;
-            this.dpY = polarCenterY - (float) Math.sin(polarTheta * Math.PI / 180.0f) * polarRad / parentHRatio * hRatio - dpH / 2;
+            this.dpX = polarOriginX  + (float) Math.cos(polarTheta * Math.PI / 180.0f) * polarRad / parentWRatio * wRatio - dpW / 2;
+            this.dpY = polarOriginY - (float) Math.sin(polarTheta * Math.PI / 180.0f) * polarRad / parentHRatio * hRatio - dpH / 2;
         }
 
         this.width = Math.round(dpW * wRatio);

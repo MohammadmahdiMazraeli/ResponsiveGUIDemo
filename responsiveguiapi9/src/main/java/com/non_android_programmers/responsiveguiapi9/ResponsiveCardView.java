@@ -17,8 +17,8 @@ import com.non_android_programmers.responsivegui.ScreenDetails;
 public class ResponsiveCardView extends CardView implements ResponsiveView {
 
     private PixelDimensions pixelDimensions;
-    private float polarCenterX=0;
-    private float polarCenterY=0;
+    private float polarOriginX=0;
+    private float polarOriginY=0;
     private float polarRad=0;
     private float polarTheta=0;
     private boolean usePolar = false;
@@ -45,9 +45,9 @@ public class ResponsiveCardView extends CardView implements ResponsiveView {
 
     public void setupPolarCoord(AttributeSet attrs) {
         TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.ResponsiveCardView, 0, 0);
-        int[] attrsRes= {R.styleable.ResponsiveCardView_PolarCoordCenterX, R.styleable.ResponsiveCardView_PolarCoordCenterY, R.styleable.ResponsiveCardView_PolarCoordRad, R.styleable.ResponsiveCardView_PolarCoordTheta, R.styleable.ResponsiveCardView_UsePolar};
-        polarCenterX = typedArray.getFloat(attrsRes[0], 0);
-        polarCenterY = typedArray.getFloat(attrsRes[1], 0);
+        int[] attrsRes= {R.styleable.ResponsiveCardView_PolarCoordOriginX, R.styleable.ResponsiveCardView_PolarCoordOriginY, R.styleable.ResponsiveCardView_PolarCoordRad, R.styleable.ResponsiveCardView_PolarCoordTheta, R.styleable.ResponsiveCardView_UsePolar};
+        polarOriginX = typedArray.getFloat(attrsRes[0], 0);
+        polarOriginY = typedArray.getFloat(attrsRes[1], 0);
         polarRad = typedArray.getFloat(attrsRes[2], 0);
         polarTheta = typedArray.getFloat(attrsRes[3], 0);
         usePolar = typedArray.getBoolean(attrsRes[4], false);
@@ -77,7 +77,7 @@ public class ResponsiveCardView extends CardView implements ResponsiveView {
         float dpWidth = ScreenDetails.px2Dp(context, params.width);
         float dpHeight = ScreenDetails.px2Dp(context, params.height);
 
-        pixelDimensions = new PixelDimensions(dpX, dpY, dpEX, dpEY, dpWidth, dpHeight, (View) getParent(), polarCenterX, polarCenterY, polarRad, polarTheta, usePolar);
+        pixelDimensions = new PixelDimensions(dpX, dpY, dpEX, dpEY, dpWidth, dpHeight, (View) getParent(), polarOriginX, polarOriginY, polarRad, polarTheta, usePolar);
     }
 
     public void updateDimensions(){

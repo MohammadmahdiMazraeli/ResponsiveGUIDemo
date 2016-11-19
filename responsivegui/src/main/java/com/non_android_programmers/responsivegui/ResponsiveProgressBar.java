@@ -12,8 +12,8 @@ import android.widget.ProgressBar;
 public class ResponsiveProgressBar extends ProgressBar implements ResponsiveView {
 
     private PixelDimensions pixelDimensions;
-    private float polarCenterX = 0;
-    private float polarCenterY = 0;
+    private float polarOriginX = 0;
+    private float polarOriginY = 0;
     private float polarRad = 0;
     private float polarTheta = 0;
     private boolean usePolar = false;
@@ -40,9 +40,9 @@ public class ResponsiveProgressBar extends ProgressBar implements ResponsiveView
 
     public void setupPolarCoord(AttributeSet attrs) {
         TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.ResponsiveProgressBar, 0, 0);
-        int[] attrsRes = {R.styleable.ResponsiveProgressBar_PolarCoordCenterX, R.styleable.ResponsiveProgressBar_PolarCoordCenterY, R.styleable.ResponsiveProgressBar_PolarCoordRad, R.styleable.ResponsiveProgressBar_PolarCoordTheta, R.styleable.ResponsiveProgressBar_UsePolar};
-        polarCenterX = typedArray.getFloat(attrsRes[0], 0);
-        polarCenterY = typedArray.getFloat(attrsRes[1], 0);
+        int[] attrsRes = {R.styleable.ResponsiveProgressBar_PolarCoordOriginX, R.styleable.ResponsiveProgressBar_PolarCoordOriginY, R.styleable.ResponsiveProgressBar_PolarCoordRad, R.styleable.ResponsiveProgressBar_PolarCoordTheta, R.styleable.ResponsiveProgressBar_UsePolar};
+        polarOriginX = typedArray.getFloat(attrsRes[0], 0);
+        polarOriginY = typedArray.getFloat(attrsRes[1], 0);
         polarRad = typedArray.getFloat(attrsRes[2], 0);
         polarTheta = typedArray.getFloat(attrsRes[3], 0);
         usePolar = typedArray.getBoolean(attrsRes[4], false);
@@ -72,7 +72,7 @@ public class ResponsiveProgressBar extends ProgressBar implements ResponsiveView
         float dpWidth = ScreenDetails.px2Dp(context, params.width);
         float dpHeight = ScreenDetails.px2Dp(context, params.height);
 
-        pixelDimensions = new PixelDimensions(dpX, dpY, dpEX, dpEY, dpWidth, dpHeight, (View) getParent(), polarCenterX, polarCenterY, polarRad, polarTheta, usePolar);
+        pixelDimensions = new PixelDimensions(dpX, dpY, dpEX, dpEY, dpWidth, dpHeight, (View) getParent(), polarOriginX, polarOriginY, polarRad, polarTheta, usePolar);
     }
 
     public void updateDimensions() {

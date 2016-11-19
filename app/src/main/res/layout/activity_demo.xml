@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.non_android_programmers.responsiveguidemo.DemoActivity">
+    tools:context="com.non_android_programmers.responsiveguidemo.DemoActivity"
+    android:background="@color/colorA7">
 
     <com.non_android_programmers.responsiveguiapi9.ResponsiveViewPager
         android:id="@+id/demo_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:background="@color/colorAccent">
+        android:layout_margin="8dp">
 
     </com.non_android_programmers.responsiveguiapi9.ResponsiveViewPager>
+
 </RelativeLayout>
