@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ResponsiveCardView">
+        <attr name="PolarCoordOriginX"/>
+        <attr name="PolarCoordOriginY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveViewPager">
+        <attr name="PolarCoordOriginX"/>
+        <attr name="PolarCoordOriginY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+    <declare-styleable name="ResponsiveRecyclerView">
+        <attr name="PolarCoordOriginX"/>
+        <attr name="PolarCoordOriginY"/>
+        <attr name="PolarCoordRad"/>
+        <attr name="PolarCoordTheta"/>
+        <attr name="UsePolar"/>
+    </declare-styleable>
+</resources>

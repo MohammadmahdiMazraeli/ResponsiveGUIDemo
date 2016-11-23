@@ -13,13 +13,6 @@
         <attr name="PolarCoordTheta"/>
         <attr name="UsePolar"/>
     </declare-styleable>
-    <declare-styleable name="ResponsiveCardView">
-        <attr name="PolarCoordOriginX"/>
-        <attr name="PolarCoordOriginY"/>
-        <attr name="PolarCoordRad"/>
-        <attr name="PolarCoordTheta"/>
-        <attr name="UsePolar"/>
-    </declare-styleable>
     <declare-styleable name="ResponsiveFrameLayout">
         <attr name="PolarCoordOriginX"/>
         <attr name="PolarCoordOriginY"/>
@@ -35,21 +28,6 @@
         <attr name="UsePolar"/>
     </declare-styleable>
     <declare-styleable name="ResponsiveProgressBar">
-        <attr name="PolarCoordOriginX"/>
-        <attr name="PolarCoordOriginY"/>
-        <attr name="PolarCoordRad"/>
-        <attr name="PolarCoordTheta"/>
-        <attr name="UsePolar"/>
-    </declare-styleable>
-    <declare-styleable name="ResponsiveInkPageIndicator">
-        <attr name="PolarCoordOriginX"/>
-        <attr name="PolarCoordOriginY"/>
-        <attr name="PolarCoordRad"/>
-        <attr name="PolarCoordTheta"/>
-        <attr name="UsePolar"/>
-    </declare-styleable>
-
-    <declare-styleable name="ResponsiveRecyclerView">
         <attr name="PolarCoordOriginX"/>
         <attr name="PolarCoordOriginY"/>
         <attr name="PolarCoordRad"/>
@@ -78,15 +56,16 @@
         <attr name="PolarCoordTheta"/>
         <attr name="UsePolar"/>
     </declare-styleable>
-    <declare-styleable name="ResponsiveViewPager">
+
+
+    <declare-styleable name="ResponsiveRoundedImageView">
         <attr name="PolarCoordOriginX"/>
         <attr name="PolarCoordOriginY"/>
         <attr name="PolarCoordRad"/>
         <attr name="PolarCoordTheta"/>
         <attr name="UsePolar"/>
     </declare-styleable>
-
-    <declare-styleable name="ResponsiveRoundedImageView">
+    <declare-styleable name="ResponsiveHorizontalScrollView">
         <attr name="PolarCoordOriginX"/>
         <attr name="PolarCoordOriginY"/>
         <attr name="PolarCoordRad"/>

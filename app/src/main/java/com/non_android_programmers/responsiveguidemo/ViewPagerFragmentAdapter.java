@@ -4,20 +4,21 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.non_android_programmers.responsivegui.ResponsiveHorizontalScrollView;
+
 public class ViewPagerFragmentAdapter extends FragmentPagerAdapter {
-    public ViewPagerFragmentAdapter(FragmentManager fm) {
+
+    Fragment[] fragments;
+
+    public ViewPagerFragmentAdapter(FragmentManager fm, Fragment[] fragments) {
         super(fm);
+        this.fragments = fragments;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0){
-            return new FirstDemoFragment();
-        }else if (position == 1){
-            return new SecondDemoFragment();
-        }else {
-            return new ThirdDemoFragment();
-        }
+
+        return fragments[position];
     }
 
     @Override
