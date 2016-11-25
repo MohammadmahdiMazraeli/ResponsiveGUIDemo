@@ -41,13 +41,13 @@ public class FirstDemoFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        scrollView = (ResponsiveHorizontalScrollView) getView().findViewById(R.id.horizontal_scrollview);
+        scrollView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
             @Override
-            public void run() {
+            public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
                 scrollView.scrollTo((relativeLayout.getWidth() - scrollView.getWidth()) / 2, 0);
             }
-        }, 1000);
+        });
     }
 
 }
