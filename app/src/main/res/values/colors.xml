@@ -23,4 +23,5 @@
     <color name="colorA19">#95A5A6</color>
     <color name="colorA20">#7F8C8D</color>
 
+    <color name="textColor">@color/colorA17</color>
 </resources>

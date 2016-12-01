@@ -1,157 +1,146 @@
 <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.non_android_programmers.responsiveguidemo.FirstDemoFragment">
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="0.5dp"
-        android:layout_height="0.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="10"
-        app:PolarCoordTheta="270"
-        app:UsePolar="true" />
+    <com.non_android_programmers.responsivegui.ResponsiveScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="0.5dp"
-        android:layout_height="0.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="12.7202"
-        app:PolarCoordTheta="315"
-        app:UsePolar="true"/>
+        <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="4000dp">
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA1"/>
 
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="16.1803"
-        app:PolarCoordTheta="0"
-        app:UsePolar="true" />
-
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="1.5dp"
-        android:layout_height="1.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="20.5817"
-        app:PolarCoordTheta="45"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA2"/>
 
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="2.5dp"
-        android:layout_height="2.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="26.1803"
-        app:PolarCoordTheta="90"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="400dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA3"/>
 
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="600dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA4"/>
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="4dp"
-        android:layout_height="4dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="33.3019"
-        app:PolarCoordTheta="135"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="800dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA5"/>
 
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="1000dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA6"/>
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="6.5dp"
-        android:layout_height="6.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="42.3607"
-        app:PolarCoordTheta="180"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="1200dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA7"/>
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="10.5dp"
-        android:layout_height="10.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="53.8837"
-        app:PolarCoordTheta="225"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="1400dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA8"/>
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="68.5411"
-        app:PolarCoordTheta="270"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="1600dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA9"/>
 
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="27.5dp"
-        android:layout_height="27.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="87.1856"
-        app:PolarCoordTheta="315"
-        app:UsePolar="true" />
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="44.5dp"
-        android:layout_height="44.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="110.902"
-        app:PolarCoordTheta="0"
-        app:UsePolar="true" />
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="141.069"
-        app:PolarCoordTheta="45"
-        app:UsePolar="true" />
-    <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
-        android:layout_width="116.5dp"
-        android:layout_height="116.5dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorA17"
-        app:PolarCoordOriginX="197.5"
-        app:PolarCoordOriginY="357.5"
-        app:PolarCoordRad="179.443"
-        app:PolarCoordTheta="90"
-        app:UsePolar="true" />
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="1800dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA10"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="2000dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA11"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="2200dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA12"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="2400dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA13"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="2600dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA14"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="2800dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA15"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="3000dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA16"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="3200dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA17"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="3400dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA18"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="3600dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA19"/>
+
+            <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
+                android:layout_marginTop="3800dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/colorA20"/>
+
+        </com.non_android_programmers.responsivegui.ResponsiveRelativeLayout>
 
 
 
-
-
+    </com.non_android_programmers.responsivegui.ResponsiveScrollView>
 
 </com.non_android_programmers.responsivegui.ResponsiveRelativeLayout>
