@@ -188,8 +188,7 @@
             android:layout_height="158dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="474dp"
-            android:background="@color/colorA4"
-            android:onClick="initializeScrollview" />
+            android:background="@color/colorA4" />
 
         <com.non_android_programmers.responsivegui.ResponsiveRelativeLayout
             android:layout_width="237dp"
