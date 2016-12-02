@@ -106,9 +106,10 @@ public class ResponsiveFrameLayout extends FrameLayout implements ResponsiveView
         boolean editMode = false;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
             editMode=isInEditMode();
-        if (!editMode) {
-            calculateDimensions();
-            updateDimensions();
-        }
+        if (!editMode)
+            if (pixelDimensions==null) {//lastly set by yours truly
+                calculateDimensions();
+                updateDimensions();
+            }
     }
 }

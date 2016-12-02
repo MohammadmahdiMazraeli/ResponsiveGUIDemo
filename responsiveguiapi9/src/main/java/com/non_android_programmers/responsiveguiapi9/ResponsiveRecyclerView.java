@@ -100,9 +100,10 @@ public class ResponsiveRecyclerView extends android.support.v7.widget.RecyclerVi
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (!isInEditMode()) {
-            calculateDimensions();
-            updateDimensions();
-        }
+        if (!isInEditMode())
+            if (pixelDimensions==null) {//lastly set by yours truly
+                calculateDimensions();
+                updateDimensions();
+            }
     }
 }

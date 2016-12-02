@@ -93,9 +93,10 @@ public class ResponsiveViewPager extends ViewPager implements ResponsiveView {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (!isInEditMode()) {
-            calculateDimensions();
-            updateDimensions();
-        }
+        if (!isInEditMode())
+            if (pixelDimensions==null) {//lastly set by yours truly
+                calculateDimensions();
+                updateDimensions();
+            }
     }
 }

@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.RectF;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.text.Layout;
 import android.text.StaticLayout;
@@ -33,6 +34,23 @@ public class ResponsiveAutoResizeTextView extends ResponsiveTextView {
         initialize();
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        initialize();
+    }
+
+    @Override
+    public void setTypeface(Typeface tf) {
+        super.setTypeface(tf);
+        initialize();
+    }
+
+    @Override
+    public void setTypeface(Typeface tf, int style) {
+        super.setTypeface(tf, style);
+        initialize();
+    }
 
     private interface SizeTester {
         /**
