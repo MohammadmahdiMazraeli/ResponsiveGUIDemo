@@ -267,7 +267,7 @@ public class ResponsiveAutoResizeTextView extends ResponsiveTextView {
                                     RectF availableSpace) {
         int lastBest = start;
         int lo = start;
-        int hi = end - 1;
+        int hi = end;
         int mid = 0;
         while (lo <= hi) {
             mid = (lo + hi) >>> 1;
